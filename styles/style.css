@@ -299,12 +299,15 @@
   padding: 60px 0 40px;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+  padding: 0;
+}
+
+.footer__column_content_copyright {
   justify-content: space-between;
   flex-basis: 711px;
-  padding: 0;
 }
 
 .footer__author {
@@ -313,20 +316,6 @@
   font-weight: 400;
   color: #fff;
   margin: 18px 0;
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  width: 210px;
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  width: 210px;
 }
 
 .footer__column-heading {
