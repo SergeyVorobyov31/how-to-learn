@@ -1,4 +1,4 @@
-@keyframes move-header__square-pic {
+@keyframes rotation {
   from {
     rotate: 20deg;
   }
@@ -88,7 +88,7 @@
   top: 64px;
   right: 0;
   z-index: 1;
-  animation: move-header__square-pic 20s linear infinite;
+  animation: rotation 20s linear infinite;
 }
 
 .description {
@@ -192,7 +192,10 @@
 }
 
 .video {
-  margin: 100px auto 160px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto -50px;
+  overflow: visible;
 }
 
 .video__iframes {
@@ -202,8 +205,6 @@
 }
 
 .video__iframe {
-  width: 515px;
-  height: 316px;
   margin-right: 20px;
 }
 
@@ -211,11 +212,18 @@
   margin-right: 0;
 }
 
+.oakley {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 160px 0 0 0;
+}
+
 .digits {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto 100px;
+  margin: 100px auto;
 }
 
 .section-title {
@@ -314,6 +322,32 @@
   font-weight: 400;
   text-decoration: none;
   color: #2f80ed;
+}
+
+.khan {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  border: 1px solid red;
+}
+
+.khan__author {
+  padding: 0;
+  margin: 0;
+}
+
+.khan__title {
+  margin: 0 0 50px;
+}
+
+.khan__quote {
+  display: flex;
+  max-width: 790px;
 }
 
 .kaufman {
