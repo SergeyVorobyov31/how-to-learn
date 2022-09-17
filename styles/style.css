@@ -1,3 +1,12 @@
+@keyframes move-header__square-pic {
+  from {
+    rotate: 20deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -17,6 +26,7 @@
   align-items: center;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -78,6 +88,7 @@
   top: 64px;
   right: 0;
   z-index: 1;
+  animation: move-header__square-pic 20s linear infinite;
 }
 
 .description {
@@ -122,6 +133,82 @@
 
 .two-colums__paragraph:last-of-type {
   margin-bottom: 0;
+}
+
+.techniques {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 920px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 100px 0 0;
+  flex-wrap: wrap;
+  width: 240px;
+  padding: 0;
+  text-align: center;
+}
+
+.cards__item:nth-of-type(3) {
+  margin: 60px 0 0 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 40px 43px;
+  padding: 0;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.cards__discription {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.video {
+  margin: 100px auto 160px;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 0;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin-right: 20px;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
 }
 
 .digits {
